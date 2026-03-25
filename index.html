@@ -1,100 +1,90 @@
 
-
+        Xin chào! Mình là Hải Yến.Mình là sinh viên với niềm đam mê học hỏi, sáng tạo và khám phá những điều mới mẻ.
+        Mình quan tâm đến việc xây dựng sản phẩm đơn giản, hiệu quả và có tính ứng dụng thực tế.
+                    Đây là một web quản lý hàng hóa dành cho các cá nhân và hộ kinh doanh vừa và nhỏ.
+            Ứng dụng giúp theo dõi số lượng hàng tồn kho, cập nhật nhập/xuất hàng và hỗ trợ
+            quản lý hiệu quả hoạt động kinh doanh.
 
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Hải Yến</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            color: #2c3e50;
-            background: linear-gradient(to top, #a8e063, #56ab2f, #87ceeb);
-            background-attachment: fixed;
         }
 
-        header {
-            text-align: center;
-            padding: 60px 20px;
+        body {
+            background: url('https://github.com/k632411330062-iez/hai-yen/blob/main/Desktop%20wallpaper.jpg?raw=true') no-repeat center center/cover;
             color: white;
+            height: 100vh;
         }
 
-        header h1 {
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
             font-size: 48px;
             margin-bottom: 10px;
         }
 
-        header p {
+        p {
             font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 20px;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        h2 {
-            color: #27ae60;
-        }
-
-        .project {
+        .section {
             margin-top: 20px;
         }
 
-        footer {
-            text-align: center;
+        .card {
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
-            color: white;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
         }
 
         a {
-            color: #27ae60;
+            color: #ffd700;
             text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Hải Yến</h1>
-    <p>Portfolio cá nhân</p>
-</header>
-
-<div class="container">
-    <h2>Giới thiệu</h2>
-    <p>
+    <div class="overlay">
+        <h1>Hải Yến</h1>
+        <p>
         Xin chào! Mình là Hải Yến.Mình là sinh viên với niềm đam mê học hỏi, sáng tạo và khám phá những điều mới mẻ.
         Mình quan tâm đến việc xây dựng sản phẩm đơn giản, hiệu quả và có tính ứng dụng thực tế.
-        
-    </p>
+        </p>
 
-    <h2>Dự án</h2>
-    <div class="project">
-        <h3>Inventory Management</h3>
-        <p>
-            Đây là một web quản lý hàng hóa dành cho các cá nhân và hộ kinh doanh vừa và nhỏ.
+        <div class="section card">
+            <h2>Dự án</h2>
+            <p>
+                <strong>Inventory Management</strong> – Đây là một web quản lý hàng hóa dành cho các cá nhân và hộ kinh doanh vừa và nhỏ.
             Ứng dụng giúp theo dõi số lượng hàng tồn kho, cập nhật nhập/xuất hàng và hỗ trợ
             quản lý hiệu quả hoạt động kinh doanh.
-        </p>
+            </p>
+        </div>
+
+        <div class="section card">
+            <h2>Liên hệ</h2>
+            <p>Email: <a href="mailto:k63.2411330062@ftu.edu.vn">k63.2411330062@ftu.edu.vn</a></p>
+        </div>
     </div>
-
-    <h2>Liên hệ</h2>
-    <p>Email: <a href="mailto:k63.2411330062@ftu.edu.vn">k63.2411330062@ftu.edu.vn</a></p>
-</div>
-
-<footer>
-    <p>© 2026 Hải Yến</p>
-</footer>
-
 </body>
 </html>
