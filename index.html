@@ -6,93 +6,95 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - Hải Yến</title>
-
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
         body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-
-            /* nền giả lập giống ảnh */
-            background: linear-gradient(120deg, #02040a, #0a1a2f, #000000);
-            overflow: hidden;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #2c3e50;
+            background: linear-gradient(to top, #a8e063, #56ab2f, #87ceeb);
+            background-attachment: fixed;
         }
 
-        /* hiệu ứng mờ giống ảnh */
-        body::before {
-            content: "";
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.08), transparent 40%),
-                        radial-gradient(circle at 70% 60%, rgba(255,255,255,0.05), transparent 50%);
-            animation: move 15s infinite linear;
-        }
-
-        @keyframes move {
-            0% { transform: translate(0,0); }
-            50% { transform: translate(-10%, -10%); }
-            100% { transform: translate(0,0); }
-        }
-
-        .overlay {
-            position: relative;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 40px 60px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
+        header {
             text-align: center;
-        }
-
-        h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-
-        p {
-            font-size: 18px;
-            opacity: 0.85;
-            margin: 10px 0;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            border: 1px solid white;
-            border-radius: 30px;
+            padding: 60px 20px;
             color: white;
-            text-decoration: none;
-            transition: 0.3s;
         }
 
-        .btn:hover {
-            background: white;
-            color: black;
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #27ae60;
+        }
+
+        .project {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
-    <div class="overlay">
-        <h1>Hải Yến</h1>
-        <p>Xin chào! Mình là Hải Yến.</p>
-        </p>Mình là sinh viên với niềm đam mê học hỏi, sáng tạo và khám phá những điều mới mẻ.</p>
-        <p>Mình quan tâm đến việc xây dựng sản phẩm đơn giản, hiệu quả và có tính ứng dụng thực tế.</p>
 
-        <a href="mailto:k63.2411330062@ftu.edu.vn" class="btn">
-            Liên hệ với mình
-        </a>
+<header>
+    <h1>Hải Yến</h1>
+    <p>Portfolio cá nhân</p>
+</header>
+
+<div class="container">
+    <h2>Giới thiệu</h2>
+    <p>
+        Xin chào! Mình là Hải Yến.Mình là sinh viên với niềm đam mê học hỏi, sáng tạo và khám phá những điều mới mẻ.
+        Mình quan tâm đến việc xây dựng sản phẩm đơn giản, hiệu quả và có tính ứng dụng thực tế.
+        
+    </p>
+
+    <h2>Dự án</h2>
+    <div class="project">
+        <h3>Inventory Management</h3>
+        <p>
+            Đây là một web quản lý hàng hóa dành cho các cá nhân và hộ kinh doanh vừa và nhỏ.
+            Ứng dụng giúp theo dõi số lượng hàng tồn kho, cập nhật nhập/xuất hàng và hỗ trợ
+            quản lý hiệu quả hoạt động kinh doanh.
+        </p>
     </div>
+
+    <h2>Liên hệ</h2>
+    <p>Email: <a href="mailto:k63.2411330062@ftu.edu.vn">k63.2411330062@ftu.edu.vn</a></p>
+</div>
+
+<footer>
+    <p>© 2026 Hải Yến</p>
+</footer>
+
 </body>
 </html>
