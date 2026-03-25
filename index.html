@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hải Yến Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: white;
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url('https://raw.githubusercontent.com/k632411330062-iez/hai-yen/main/Desktop%20wallpaper.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #8e2de2, #4a00e0);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    header p {
+      margin-top: 10px;
+      opacity: 0.85;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 2px;
+      background: #8e2de2;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 20px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(142, 45, 226, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      opacity: 0.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #8e2de2, #4a00e0);
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hải Yến</h1>
+    <p>Khám phá vũ trụ sáng tạo của riêng mình ✨</p>
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <a href="#projects">Dự án</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Giới thiệu</h2>
+    <div class="card">
+      <p>
+        Mình là Hải Yến, một người đang học và khám phá lĩnh vực công nghệ và sáng tạo nội dung. 
+        Mình quan tâm đến việc xây dựng sản phẩm đơn giản, hiệu quả và có tính ứng dụng thực tế.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Dự án</h2>
+
+    <div class="card">
+      <h3>Project 1</h3>
+      <p>Mô tả ngắn về dự án bạn đã làm.</p>
+    </div>
+
+    <div class="card">
+      <h3>Project 2</h3>
+      <p>Mô tả thêm một dự án khác.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Liên hệ</h2>
+    <div class="card">
+      <p>Email: k63.2411330062@ftu.edu.vn</p>
+      <a href="mailto:k63.2411330062@ftu.edu.vn" class="btn">Gửi email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Hải Yến</p>
+  </footer>
+
+</body>
+</html>
