@@ -1,57 +1,78 @@
 
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - Hải Yến</title>
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
         }
 
         body {
             height: 100vh;
-            background: url("https://raw.githubusercontent.com/k632411330062-iez/hai-yen/main/background.jpg") no-repeat center center/cover;
-            color: white;
             display: flex;
-            align-items: center;
             justify-content: center;
-            text-align: center;
+            align-items: center;
+            color: white;
+
+            /* nền giả lập giống ảnh */
+            background: linear-gradient(120deg, #02040a, #0a1a2f, #000000);
+            overflow: hidden;
+        }
+
+        /* hiệu ứng mờ giống ảnh */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.08), transparent 40%),
+                        radial-gradient(circle at 70% 60%, rgba(255,255,255,0.05), transparent 50%);
+            animation: move 15s infinite linear;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0,0); }
+            50% { transform: translate(-10%, -10%); }
+            100% { transform: translate(0,0); }
         }
 
         .overlay {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 40px;
-            border-radius: 15px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px 60px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 50px;
             margin-bottom: 10px;
+            letter-spacing: 2px;
         }
 
         p {
             font-size: 18px;
+            opacity: 0.85;
             margin: 10px 0;
-        }
-
-        .email {
-            margin-top: 20px;
-            font-size: 16px;
-            opacity: 0.9;
         }
 
         .btn {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 10px 25px;
             border: 1px solid white;
-            border-radius: 25px;
-            text-decoration: none;
+            border-radius: 30px;
             color: white;
+            text-decoration: none;
             transition: 0.3s;
         }
 
@@ -61,18 +82,17 @@
         }
     </style>
 </head>
+
 <body>
     <div class="overlay">
         <h1>Hải Yến</h1>
         <p>Xin chào! Mình là Hải Yến.</p>
-        <p>Mình là sinh viên với niềm đam mê học hỏi, sáng tạo và khám phá những điều mới mẻ.</p>
+        </p>Mình là sinh viên với niềm đam mê học hỏi, sáng tạo và khám phá những điều mới mẻ.</p>
         <p>Mình quan tâm đến việc xây dựng sản phẩm đơn giản, hiệu quả và có tính ứng dụng thực tế.</p>
 
-        <div class="email">
-            📧 k63.2411330062@ftu.edu.vn
-        </div>
-
-        <a href="mailto:k63.2411330062@ftu.edu.vn" class="btn">Liên hệ với mình</a>
+        <a href="mailto:k63.2411330062@ftu.edu.vn" class="btn">
+            Liên hệ với mình
+        </a>
     </div>
 </body>
 </html>
